@@ -61,7 +61,8 @@ fun day7(input: String) {
 
                 newTachyonPositions[position] = center + center2
             }
-        }
+
+
         println(newTachyonPositions)
         tachyonPositions = newTachyonPositions
     }
