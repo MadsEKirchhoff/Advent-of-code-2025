@@ -37,22 +37,36 @@ fun day7(input: String) {
     val rows = input.split("\n")
     val startX = rows[0].indexOfFirst { c -> c == 'S' }
     /*var tachyonPositions = listOf(startX to 0)*/
-    var tachyonPositions = mutableSetOf(startX)
-    var tachyonSplits = 0
+    var tachyonPositions = mutableMapOf(startX to 1L)
+    var tachyonPaths = mutableSetOf<String>("C")
+
     rows.slice(1..<rows.size-1).forEach { row ->
-        var newTachyonPositions = mutableSetOf<Int>()
-        tachyonPositions.forEach { position ->
+        println(row)
+        var newTachyonPositions = mutableMapOf<Int, Long>()
+        tachyonPositions.forEach { pair ->
+            val position = pair.key
+            val newPositions = mutableSetOf<String>()
             if(row[position] == '^')
             {
-                tachyonSplits+=1
-                newTachyonPositions.add(position+1)
-                newTachyonPositions.add(position+-1)
-            }else
-                newTachyonPositions.add(position)
+                tachyonPaths = newPositions
+                val old = tachyonPositions[position] ?: 0L
+                val left = newTachyonPositions[position+1] ?: 0L;
+                val right = newTachyonPositions[position-1] ?: 0L
+
+                newTachyonPositions.put(position+1, left+old)
+                newTachyonPositions.put(position-1, right+old)
+            }else {
+                val center = tachyonPositions[position] ?: 0L;
+                val center2 = newTachyonPositions[position] ?: 0L;
+
+                newTachyonPositions[position] = center + center2
+            }
         }
+        println(newTachyonPositions)
         tachyonPositions = newTachyonPositions
     }
-    println("final $tachyonSplits")
+    val efe = tachyonPositions.values.sum()
+    println("final $efe")
     //1630
 }
 

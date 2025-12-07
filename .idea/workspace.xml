@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71f56fb6-d1d7-4020-8e8d-7c094f59915f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/input7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="71f56fb6-d1d7-4020-8e8d-7c094f59915f" name="Changes" comment="day 6.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EUD6l1OWsAAxLtB.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mainkt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mainkt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mainkt.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +74,28 @@
       <option name="presentableId" value="Default" />
       <updated>1765051323471</updated>
     </task>
+    <task id="LOCAL-00001" summary="day 6.5">
+      <option name="closed" value="true" />
+      <created>1765109218654</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765109218654</updated>
+    </task>
+    <task id="LOCAL-00002" summary="day 6.5">
+      <option name="closed" value="true" />
+      <created>1765109240136</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765109240136</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day 6.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 6.5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -93,7 +107,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/Mainkt.kt</url>
-          <line>77</line>
+          <line>91</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
