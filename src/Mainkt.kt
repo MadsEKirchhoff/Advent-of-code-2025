@@ -17,10 +17,83 @@ fun main() {
     day4(test4)
     day4(input4)*/
 
-    val test5 = File("test5.txt").readText().replace("\r", "")
+    /*val test5 = File("test5.txt").readText().replace("\r", "")
     val input5 = File("input5.txt").readText().replace("\r", "")
     //day5(test5)
-    day5(input5)
+    day5(input5)*/
+
+    /*val test6 = File("test6.txt").readText().replace("\r", "")
+    val input6 = File("input6.txt").readText().replace("\r", "")
+    day6(test6)
+    day6(input6)*/
+
+    val test7 = File("test7.txt").readText().replace("\r", "")
+    val input7 = File("input7.txt").readText().replace("\r", "")
+    day7(test7)
+    day7(input7)
+}
+
+fun day7(input: String) {
+    val rows = input.split("\n")
+    val startX = rows[0].indexOfFirst { c -> c == 'S' }
+    /*var tachyonPositions = listOf(startX to 0)*/
+    var tachyonPositions = mutableSetOf(startX)
+    var tachyonSplits = 0
+    rows.slice(1..<rows.size-1).forEach { row ->
+        var newTachyonPositions = mutableSetOf<Int>()
+        tachyonPositions.forEach { position ->
+            if(row[position] == '^')
+            {
+                tachyonSplits+=1
+                newTachyonPositions.add(position+1)
+                newTachyonPositions.add(position+-1)
+            }else
+                newTachyonPositions.add(position)
+        }
+        tachyonPositions = newTachyonPositions
+    }
+    println("final $tachyonSplits")
+    //1630
+}
+
+
+
+fun day6(input: String) {
+    println(input)
+    val rows = input.split("\n")
+    val length = input.split(" ").map { it.length }
+    println(length)
+    val longest = length.reduce { acc, numb -> if (numb > acc ) numb else acc }
+    val operators = rows[rows.size - 1].split(" ").filter(String::isNotBlank)
+    var total = 0L
+    val height = rows.size
+
+    var x = 0
+    operators.forEachIndexed { index, operator ->
+
+        var sum = if(operator == "*") 1L else 0L
+        while (x < rows[0].length) {
+            var number = 0L
+            for (y in 0 until height-1) {
+                val entry = rows[y][x].digitToIntOrNull()
+                if(entry != null) {
+                    number = number*10L + entry
+print(entry)
+                }
+            }
+            x++
+            if(number == 0L) break
+            println("number " +number)
+            if(operator == "*")
+                sum *= number
+            else
+                sum += number
+        }
+        total += sum
+    }
+    // Too low 10512390
+
+    println("Total " + total)
 }
 
 fun day5(input: String) {
@@ -30,47 +103,47 @@ fun day5(input: String) {
         val pairArr = rangeStr.split("-")
         val min = pairArr[0].toLong()
         val max = pairArr[1].toLong()
-        val pair =  min to max
+        val pair = min to max
         return@map pair
     }
 
-    val sortedRanges = freshRanges.sortedBy { pair -> pair.first  }
-/*    var freshMap = hashMapOf<Int, List<Pair<Long, Long>()
+    val sortedRanges = freshRanges.sortedBy { pair -> pair.first }
+    /*    var freshMap = hashMapOf<Int, List<Pair<Long, Long>()
 
-    freshArr.forEach { rangeStr ->
-        val pairArr = rangeStr.split("-")
-        val min = pairArr[0].toLong()
-        val max = pairArr[1].toLong()
-        val pair = min to max
-        val stringLength = pairArr[0].length
-        val firstDigit = rangeStr[0]
-        val firstDigitMax = pairArr[1][0]
-        val firstRangeMax = firstDigitMax.digitToInt()+1
-        val firstRangeMin = firstDigit.digitToInt()
+        freshArr.forEach { rangeStr ->
+            val pairArr = rangeStr.split("-")
+            val min = pairArr[0].toLong()
+            val max = pairArr[1].toLong()
+            val pair = min to max
+            val stringLength = pairArr[0].length
+            val firstDigit = rangeStr[0]
+            val firstDigitMax = pairArr[1][0]
+            val firstRangeMax = firstDigitMax.digitToInt()+1
+            val firstRangeMin = firstDigit.digitToInt()
 
-        for (i in firstRangeMin until firstRangeMax) {
-            val existingList: List<Pair<Long, Long>>? = freshMap[stringLength]?.get(i)
-            val newList = existingList?.plus(pair) ?: listOf(pair)
-            val map = freshMap[stringLength] ?: hashMapOf()
-            map[i] = newList
-            freshMap[stringLength] = map
-            println(stringLength.toString() + i.toString() + "" + newList)
-        }
-    }*/
+            for (i in firstRangeMin until firstRangeMax) {
+                val existingList: List<Pair<Long, Long>>? = freshMap[stringLength]?.get(i)
+                val newList = existingList?.plus(pair) ?: listOf(pair)
+                val map = freshMap[stringLength] ?: hashMapOf()
+                map[i] = newList
+                freshMap[stringLength] = map
+                println(stringLength.toString() + i.toString() + "" + newList)
+            }
+        }*/
 
     var currentPair: Pair<Long, Long> = sortedRanges[0].first to sortedRanges[0].second
     var normalizedRanges = listOf<Pair<Long, Long>>()
     sortedRanges.forEachIndexed { index, (first, second) ->
-        if(first <= currentPair.second ) {
+        if (first <= currentPair.second) {
             if (second > currentPair.second) {
                 currentPair = currentPair.first to second
             }
-            if(index == sortedRanges.size-1 )
+            if (index == sortedRanges.size - 1)
                 normalizedRanges = normalizedRanges.plus(currentPair)
         } else {
             normalizedRanges = normalizedRanges.plus(currentPair)
             currentPair = first to second
-            if(index == sortedRanges.size-1 )
+            if (index == sortedRanges.size - 1)
                 normalizedRanges = normalizedRanges.plus(currentPair)
         }
     }
