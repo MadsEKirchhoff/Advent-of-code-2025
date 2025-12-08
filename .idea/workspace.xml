@@ -4,31 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="552d7106-026d-4d90-9a63-b1edd28dd7b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advent-of-code-2025Kotlin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test5.txt" afterDir="false" />
-    </list>
+    <list default="true" id="552d7106-026d-4d90-9a63-b1edd28dd7b6" name="Changes" comment="day 5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MadsEKirchhoff"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MadsEKirchhoff/Advent-of-code-2025.git",
+    "accountId": "5aff5554-8c31-4052-9cb9-88fcd1e9fff0"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Main.kt" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -51,11 +52,11 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/advent-of-code-2025Kotlin",
+    "last_opened_file_path": "D:/Advent-of-code-2025",
     "onboarding.tips.debug.path": "D:/advent-of-code-2025Kotlin/src/Main.kt",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "to.speed.mode.migration.done": "true"
@@ -98,6 +99,31 @@
       <option name="presentableId" value="Default" />
       <updated>1764665744918</updated>
     </task>
+    <task id="LOCAL-00001" summary="efie">
+      <option name="closed" value="true" />
+      <created>1764943980405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764943980405</updated>
+    </task>
+    <task id="LOCAL-00002" summary="efieefef">
+      <option name="closed" value="true" />
+      <created>1764944000566</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764944000566</updated>
+    </task>
+    <task id="LOCAL-00003" summary="day 5">
+      <option name="closed" value="true" />
+      <created>1764944092699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764944092699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,7 +137,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -123,6 +149,12 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="efie" />
+    <MESSAGE value="efieefef" />
+    <MESSAGE value="day 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 5" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -132,7 +164,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/Main.kt</url>
-          <line>78</line>
+          <line>79</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -140,7 +172,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/Main.kt</url>
-          <line>60</line>
+          <line>61</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
