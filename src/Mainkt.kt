@@ -303,4 +303,5 @@ fun day2(input: String) {
         }
         println("result $badIdSum")
     }
+    }
 }
